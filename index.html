@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diamond Ring Collections</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#collections">Collections</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h1>Discover Elegant Diamond Rings</h1>
+        <p>Explore our exclusive collections.</p>
+        <!-- Background image set through CSS -->
+    </section>
+
+    <section id="collections">
+        <h2>Our Collections</h2>
+        <div class="ring">
+            <img src="ring1.jpg" alt="Diamond Ring 1">
+            <h3>Collection 1</h3>
+            <p>Description of Collection 1</p>
+            <button>View More</button>
+        </div>
+        <!-- Repeat for other collections -->
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Learn about our journey and craftsmanship.</p>
+        <!-- Optional: Embed a video -->
+        <video controls>
+            <source src="about_us_video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Diamond Ring Collections</p>
+    </footer>
+</body>
+</html>
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 2em;
+    text-align: center;
+}
+
+#home {
+    background: url('diamond-ring-background.jpg') no-repeat center center;
+    background-size: cover;
+    color: #fff;
+}
+
+.ring {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
